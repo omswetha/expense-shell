@@ -24,4 +24,4 @@ systemctl start backend
 
 dnf install mysql -y
 
-mysql -h mysql-dev.osdevops.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h mysql-dev.osdevops99.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
