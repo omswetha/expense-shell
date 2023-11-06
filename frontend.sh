@@ -1,4 +1,8 @@
+
+echo -e "\e[36m installing the nginx \e[0m"
 dnf install nginx -y
+
+
 
 systemctl enable nginx
 
