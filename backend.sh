@@ -25,6 +25,10 @@ echo -e "${colour} creating the application directory \e[0m"
 mkdir /app &>>$log_log_file
 echo $?
 
+echo -e "${colour} creating the application directory \e[0m"
+rm -rf /app/* &>>$log_log_file
+echo $?
+
 echo -e "${colour} downloading the backend application \e[0m"
 curl -o /tmp/backend.zip https://expense-artifacts.s3.amazonaws.com/backend.zip &>>$log_log_file
 echo $?
