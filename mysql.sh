@@ -22,4 +22,5 @@ systemctl start mysqld &>>log_file
 echo $?
 
 echo -e "${colour} installing the nginx \e[0m"
-mysql_secure_installation --set-root-pass ExpenseApp@1
+mysql_secure_installation --set-root-pass ExpenseApp@1 &>>log_file
+echo $?
